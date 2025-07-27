@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+
+
+.roundoff {
+    background-color: #000000;
+    overflow: hidden;
+    filter: grayscale(100%);
+}
+
+.roundoff:hover {
+    background-color: #000000;
+    overflow: hidden;
+    filter: grayscale(0%);
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 1));
+}
+
+.card-title {
+    color:mediumseagreen
+}
+

@@ -1,0 +1,165 @@
+ .navbar {
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    scroll-behavior: smooth;
+}
+
+.navbar .container,
+.navbar .container-fluid,
+.navbar .container-sm,
+.navbar .container-md,
+.navbar .container-lg,
+.navbar .container-xl {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    display: inline-block;
+    font-family: "Roboto";
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    text-decoration: none;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+}
+
+.navbar-text {
+    display: inline-block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    text-decoration: none;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+} 
+
+
+.navbar {
+    height: 60px;
+    width: 90vw;
+    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    box-sizing: border-box;
+    display: block;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15),
+        0px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    position: sticky;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: sticky;
+    z-index: 2;
+}
+
+.navbar .logo {
+    justify-content: left;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 16pt;
+    margin: 0 0 0 2rem;
+}
+
+
+.navbar .logo a {
+    text-decoration: none;
+    color: #090909;
+}
+
+.navbar ul {
+    font-family: "Roboto";
+    justify-content: right;
+    list-style: none;
+    margin: 0 2rem;
+    padding: 0;
+    margin-left: 4em;
+}
+
+.navbar ul li {
+    display: inline;
+    text-decoration: none;
+}
+
+.navbar ul li a {
+    padding: 0.25em 1em 0.25em 1em;
+    color: #090909;
+    text-decoration: none;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+}
+
+.navbar a:hover {
+    color: #777;
+    transition-duration: 0.3s;
+    scroll-behavior: smooth;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 1rem;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
