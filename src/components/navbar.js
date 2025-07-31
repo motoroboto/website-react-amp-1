@@ -26,7 +26,13 @@ class Nav extends React.Component {
         <div class='logo'>
           <a href='/'>RCK.</a>
         </div>
-        {navbarComponent}
+        <div className='navLinks' id='navLinkArea'>
+          {navbarComponent}
+        </div>
+        <div className='dropdown'>
+          <a class='dropbtn icon'>Menu </a>
+          <div class='dropdown-content'>{navbarComponent}</div>
+        </div>
       </nav>
     );
   }

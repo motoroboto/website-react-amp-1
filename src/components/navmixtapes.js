@@ -12,7 +12,7 @@ function NavMixtape() {
         </a>
       </li>
       <li className='nav-item'>
-        <a className='nav-link js-scroll-trigger' href='/mixtapes/'>
+        <a className='nav-link js-scroll-trigger' href='/mixtapes/summer'>
           Summer (Coming Soon)
         </a>
       </li>

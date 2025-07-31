@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import "../css/christmas.css";
+import "../css/summer.css";
 import "../css/modal.css";
+import { volumes } from "../lib/summerlist";
 import Modal from "../components/modal";
-import "../scripts/modal.js";
-import { volumes } from "../lib/christmaslist.js";
-const TITLE = "christmas";
+const TITLE = "summer vibes";
 
 function importAll(r) {
   let images = {};
@@ -15,27 +14,30 @@ function importAll(r) {
 }
 
 const images = importAll(
-  require.context(
-    "../assets/img/mixtapes/christmas",
-    true,
-    /\.(png|jpe?g|svg)$/
-  )
+  require.context("../assets/img/mixtapes/summer", true, /\.(png|jpe?g|svg)$/)
 );
 
-export default function Christmas() {
+export default function Summer() {
   const [isModalOpen, setModalOpen] = useState(false);
   const [modalId, setModalId] = useState("01");
-  const [mixStyle, setMixStyle] = useState("christmas");
+  const [mixStyle, setMixStyle] = useState("summer");
 
   function handleClick(e) {
     setModalOpen(true);
     setModalId(e.target.id);
-    setMixStyle("christmas");
+    setMixStyle("summer");
   }
 
   return (
-    <body className='christmas-body'>
+    <body className='summer-body'>
       <title>{TITLE}</title>
+
+      <header class='masthead'>
+        <div className='container d-flex h-100 align-items-center mx-auto text-center'>
+          <h1 className='text-white-50 mx-auto mt-1 mb-5'>Coming Soon</h1>
+          {/* <h2>Coming soon</h2> */}
+        </div>
+      </header>
 
       <div class='gallery'>
         <div class='row'>

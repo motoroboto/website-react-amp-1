@@ -1,11 +1,12 @@
 import React from "react";
 import "../css/styles.css";
-import "../scripts/masthead.js";
+// import "../scripts/masthead.js";
+// import "../css/container.css";
 import Housecat from "../assets/img/housecat.png";
-import project1 from "../assets/img/project-one/color.png";
-import project2 from "../assets/img/project-two/color.png";
-import project3 from "../assets/img/project-three.jpeg";
-import project4 from "../assets/img/mashups.png";
+import project1 from "../assets/img/projects/one.png";
+import project2 from "../assets/img/projects/two.png";
+import project3 from "../assets/img/projects/three.jpg";
+import project4 from "../assets/img/mastheads/mashups.png";
 import Card from "../components/card.js";
 import Signup from "../components/signup.js";
 
@@ -15,9 +16,6 @@ function Main() {
   return (
     <div id='page-top'>
       <title>{TITLE}</title>
-      {/* Navigation */}
-      {/* <Nav /> */}
-      {/* Masthead */}
       <header className='masthead index-bg'>
         <div className='container d-flex h-100 align-items-center'>
           <div className='mx-auto text-center'>
@@ -41,11 +39,11 @@ function Main() {
             </div>
           </div>
         </div>
-        <img className='img-fluid' src={Housecat} alt='' width='100%' />
+        <img className='img-fluid' src={Housecat} alt='housecat' width='100%' />
       </section>
 
       {/* Projects */}
-      <section className='projects-section bg-light' id='projects'>
+      <section className='projects-section' id='projects'>
         <div className='container'>
           <Card
             title='Mixtapes'
@@ -61,7 +59,7 @@ function Main() {
           />
           <Card
             title='Original Compositions (Coming Soon)'
-            url='/'
+            url='/originals'
             description='I think it would be cool to have a place for random non-album tracks instead of cluttering my bandcamp with a lot of single song releases. Maybe...'
             image={project3}
           />

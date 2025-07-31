@@ -43,9 +43,9 @@ export default function Halloween() {
       </header> */}
 
       <div class='gallery'>
-        <div class='row row-cols-3'>
+        <div class='row'>
           {volumes.map((volume) => (
-            <div className='col' id={volume}>
+            <div className='gallery-col' id={volume}>
               <div className='card-body'>
                 <label for='modal-1'>
                   <img

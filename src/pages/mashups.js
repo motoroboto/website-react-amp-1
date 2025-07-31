@@ -30,25 +30,26 @@ export default function Mashups() {
 
   return (
     <body className='mashup-body'>
-      <title>{TITLE}</title>
-
-      <header className='masthead'>
-        <div className='container d-flex h-100 align-items-center'>
-          <div className='mx-auto text-center'>
-            {/* <h1 className='text-white-50 mx-auto mt-1 mb-5'>Mashups</h1> */}
-            <h2 className='text-white-50 mx-auto mt-1 mb-5'>
-              Do you ever want to be listening to more than one song at the same
-              time? Here there will soon be collections of tracks that will
-              allow you to do just that.
-            </h2>
+      <div id='page-top'>
+        <title>{TITLE}</title>
+        <header className='masthead'>
+          <div className='container d-flex h-100 align-items-center'>
+            <div className='mx-auto text-center'>
+              {/* <h1 className='text-white-50 mx-auto mt-1 mb-5'>Mashups</h1> */}
+              <h2 className='text-white-50 mx-auto mt-1 mb-5'>
+                Do you ever want to be listening to more than one song at the
+                same time? Here there will soon be collections of tracks that
+                will allow you to do just that.
+              </h2>
+            </div>
           </div>
-        </div>
-      </header>
+        </header>
+      </div>
 
       <div class='gallery'>
-        <div class='row row-cols-3'>
+        <div class='row'>
           {volumes.map((volume) => (
-            <div className='col' id={volume}>
+            <div className='gallery-col' id={volume}>
               <div className='card-body'>
                 <img
                   onClick={handleClick}

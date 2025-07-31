@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/styles.css";
+import "../css/footer.css";
 import {
   faGithub,
   faFacebookF,
@@ -16,7 +16,7 @@ function Footer() {
     <div>
       <section className='contact-section bg-black'>
         <div className='container'>
-          <div className='social d-flex justify-content-center'>
+          <div className='social d-flex'>
             <a className='mx-2' href='https://bsky.app/profile/motoroboto.co'>
               <FontAwesomeIcon icon={faBluesky} />
             </a>

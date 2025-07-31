@@ -1,4 +1,3 @@
-import React from "react";
 import "../css/signup.css";
 import "../scripts/navbar.js";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
@@ -9,15 +8,12 @@ function Signup() {
     <section className='signup-section' id='signup'>
       <div className='container'>
         <div className='row'>
-          <div className='col-md-10 col-lg-8 mx-auto text-center'>
-            <FontAwesomeIcon
-              icon={faPaperPlane}
-              className='fa-2x mb-2 text-white'
-            />
+          <div className='signup-col mx-auto text-center'>
+            <FontAwesomeIcon icon={faPaperPlane} className='fa-2x text-white' />
             <h2 className='text-white mb-5'>Want To Discuss A Project?</h2>
             <form className='form-inline d-flex'>
               <input
-                className='form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0'
+                className='form-control-email'
                 id='inputEmail'
                 type='email'
                 placeholder="This doesn't even work..."

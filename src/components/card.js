@@ -7,13 +7,18 @@ const SquareDiv = styled.div`
   background-color: black;
   padding: 0rem;
   margin: 1rem;
+  max-width: 66vw;
+  height: auto;
 `;
 
 const SquareImg = styled.div`
-  display: inline-block;
   background-color: black;
   padding: 0rem;
   margin: 0rem;
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  min-height: 100%;
 `;
 
 const BeveledDiv = styled(SquareDiv)`
@@ -53,20 +58,20 @@ const BeveledImg = styled(SquareImg)`
 `;
 
 const ShadowCaster = styled.div`
-  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0px 0.5vw 4px rgba(0, 0, 0, 0.2));
 `;
 
-function Card({ title, url, image, mouseover, description }) {
+function Card({ title, url, image, description }) {
   const cornerAngles = [0, 45, 0, 45];
   const cornerAnglesImg = [0, 0, 45, 0];
 
   return (
-    <a href={url}>
+    <a className='text-center' href={url}>
       <ShadowCaster>
         <BeveledDiv
           cornerAngleRadians={cornerAngles.map((a) => (a * Math.PI) / 180)}
         >
-          <div className=' row roundoff no-gutters justify-content-center'>
+          <div className='row roundoff no-gutters'>
             <div className='col-4'>
               <BeveledImg
                 cornerAngleRadians={cornerAnglesImg.map(
@@ -74,11 +79,9 @@ function Card({ title, url, image, mouseover, description }) {
                 )}
               >
                 <img
-                  className='img-fluid'
-                  id='project1'
+                  className='img-card-project'
                   src={`${image}`}
                   alt='project'
-                  height='100%'
                 />
               </BeveledImg>
             </div>

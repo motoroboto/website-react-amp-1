@@ -8,6 +8,8 @@ import Footer from "./components/footer.js";
 import Mixtapes from "./pages/mixtapes.js";
 import Halloween from "./pages/halloween.js";
 import Christmas from "./pages/christmas.js";
+import Originals from "./pages/originals.js";
+import Summer from "./pages/summer.js";
 import Mashups from "./pages/mashups.js";
 
 function App() {
@@ -16,14 +18,12 @@ function App() {
       <Nav />
       <Routes>
         <Route path='/' element={<Main />} />
-        {/* <Route path='/website-react' element={<Main />} /> */}
         <Route path='/mixtapes' element={<Mixtapes />} />
         <Route path='/mixtapes/halloween' element={<Halloween />} />
         <Route path='/mixtapes/christmas' element={<Christmas />} />
+        <Route path='/mixtapes/summer' element={<Summer />} />
+        <Route path='/originals' element={<Originals />} />
         <Route path='/mashups' element={<Mashups />} />
-        {/* <Route path="/contact" element={<Contact />} /> */}
-        {/* <Route path="/blogs" element={<Blogs />} /> */}
-        {/* <Route path="/sign-up" element={<SignUp />} /> */}
       </Routes>
       <Footer />
     </Router>

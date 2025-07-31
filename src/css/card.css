@@ -1,21 +1,145 @@
 @charset "UTF-8";
 
-
-
 .roundoff {
-    background-color: #000000;
-    overflow: hidden;
-    filter: grayscale(100%);
+  background-color: #000000;
+  overflow: hidden;
+  filter: grayscale(100%);
+  margin-top: -1em;
+  margin-bottom: -1em;
 }
 
 .roundoff:hover {
-    background-color: #000000;
-    overflow: hidden;
-    filter: grayscale(0%);
-    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 1));
+  background-color: #000000;
+  overflow: hidden;
+  filter: grayscale(0%);
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 1));
 }
 
 .card-title {
-    color:mediumseagreen
+  color: mediumseagreen;
+}
+.img-card-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  min-width: 100%;
+  min-height: 100%;
 }
 
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.col-4 {
+  position: relative;
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+
+.col-8 {
+  position: relative;
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%;
+}
+
+.bg-black {
+  background-color: #000000 !important;
+}
+
+a.bg-black:hover,
+a.bg-black:focus,
+button.bg-black:hover,
+button.bg-black:focus {
+  background-color: black !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.my-auto {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+@media (min-width: 992px) {
+  .text-lg-left {
+    text-align: left !important;
+  }
+
+  .text-lg-right {
+    text-align: right !important;
+  }
+
+  .text-lg-center {
+    text-align: center !important;
+  }
+}
+
+.card-title {
+  margin-bottom: 0.75rem;
+}
+
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.d-none {
+  display: none !important;
+}
+
+@media (min-width: 992px) {
+  .d-lg-none {
+    display: none !important;
+  }
+
+  .d-lg-inline {
+    display: inline !important;
+  }
+
+  .d-lg-inline-block {
+    display: inline-block !important;
+  }
+
+  .d-lg-block {
+    display: block !important;
+  }
+
+  .d-lg-table {
+    display: table !important;
+  }
+
+  .d-lg-table-cell {
+    display: table-cell !important;
+  }
+
+  .d-lg-flex {
+    display: flex !important;
+  }
+
+  .d-lg-inline-flex {
+    display: inline-flex !important;
+  }
+}
+
+.ml-0 {
+  margin-left: 0 !important;
+}
